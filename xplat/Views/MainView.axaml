@@ -1,0 +1,48 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:a="using:AvaloniaSample.Axes.ColorsAndPosition"
+        xmlns:b="using:AvaloniaSample.Axes.DateTimeScaled"
+        xmlns:c="using:AvaloniaSample.Events.AddPointOnClick"
+        xmlns:d="using:AvaloniaSample.Axes.LabelsRotation"
+        xmlns:e="using:AvaloniaSample.Axes.Logaritmic"
+        xmlns:h="using:AvaloniaSample.Axes.Shared"
+        xmlns:j="using:AvaloniaSample.Axes.TimeSpanScaled"
+        xmlns:k="using:AvaloniaSample.Lines.Area"
+        xmlns:l="using:AvaloniaSample.Lines.AutoUpdate"
+        xmlns:m="using:AvaloniaSample.Lines.Straight"
+        xmlns:n="using:AvaloniaSample.Lines.Zoom"
+        xmlns:o="using:AvaloniaSample.Pies.AutoUpdate"
+        xmlns:p="using:AvaloniaSample.Pies.Basic"
+        xmlns:q="using:AvaloniaSample.Pies.Custom"
+        xmlns:r="using:AvaloniaSample.Pies.Doughnut"
+        xmlns:s="using:AvaloniaSample.Pies.Gauge"
+        xmlns:t="using:AvaloniaSample.Pies.NightingaleRose"
+        xmlns:u="using:AvaloniaSample.Pies.Processing"
+        xmlns:v="using:AvaloniaSample.Events.Polar"
+        xmlns:y="using:AvaloniaSample.Maps.World.View"        
+        x:Class="xplat.Views.MainView">
+  <Grid>    
+    <TabControl Name="Sidebar">
+      <TabItem Header="A"><a:View/></TabItem>
+      <TabItem Header="B"><b:View/></TabItem>
+      <TabItem Header="C"><c:View/></TabItem>
+      <TabItem Header="D"><d:View/></TabItem>
+      <TabItem Header="E"><e:View/></TabItem>
+      <TabItem Header="H"><h:View/></TabItem>
+      <TabItem Header="J"><j:View/></TabItem>
+      <TabItem Header="K"><k:View/></TabItem>
+      <TabItem Header="L"><l:View/></TabItem>
+      <TabItem Header="M"><m:View/></TabItem>
+      <TabItem Header="N"><n:View/></TabItem>
+      <TabItem Header="O"><o:View/></TabItem>
+      <TabItem Header="P"><p:View/></TabItem>
+      <TabItem Header="Q"><q:View/></TabItem>
+      <TabItem Header="R"><r:View/></TabItem>
+      <TabItem Header="S"><s:View/></TabItem>
+      <TabItem Header="T"><t:View/></TabItem>
+      <TabItem Header="U"><u:View/></TabItem>
+      <TabItem Header="V"><v:View/></TabItem>
+      <TabItem Header="Y"><y:View/></TabItem>
+    </TabControl>
+  </Grid>
+</UserControl>
