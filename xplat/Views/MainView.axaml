@@ -19,7 +19,7 @@
         xmlns:t="using:AvaloniaSample.Pies.NightingaleRose"
         xmlns:u="using:AvaloniaSample.Pies.Processing"
         xmlns:v="using:AvaloniaSample.Events.Polar"
-        xmlns:y="using:AvaloniaSample.Maps.World.View"        
+        xmlns:y="using:AvaloniaSample.Maps.World"        
         x:Class="xplat.Views.MainView">
   <Grid>    
     <TabControl Name="Sidebar">
