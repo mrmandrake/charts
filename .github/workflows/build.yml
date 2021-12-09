@@ -19,6 +19,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: Install wasm-tools
+      run: dotnet workload install wasm-tools    
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1.9.0
       with:
