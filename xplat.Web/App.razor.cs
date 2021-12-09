@@ -7,7 +7,7 @@ public partial class App
     protected override void OnParametersSet()
     {
         base.OnParametersSet();
-        
-        BlazorSingleViewLifetimeExtensions.SetupWithBlazorSingleViewLifetime<xplat.App>();
+        WebAppBuilder.Configure<xplat.App>()
+            .SetupWithSingleViewLifetime();
     }
 }
