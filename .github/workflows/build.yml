@@ -18,15 +18,20 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
+
     - uses: actions/checkout@v1
-    - name: Install wasm-tools
-      run: dotnet workload install wasm-tools    
+
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1.9.0
       with:
         dotnet-version: '6.0.x'
         include-prerelease: true
+
+    - name: Install wasm-tools
+      run: dotnet workload install wasm-tools    
+
     - name: Build Release
       run: dotnet build --configuration Release
+      
     - name: Test Release
       run: dotnet test --configuration Release
