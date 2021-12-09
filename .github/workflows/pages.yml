@@ -20,9 +20,9 @@ jobs:
       run: dotnet workload install wasm-tools
 
     - name: Publish .NET Project
-      run: dotnet publish samples/NodeEditor.Web/NodeEditor.Web.csproj -c Release -o release --nologo
+      run: dotnet publish xplat.Web/xplat.Web.csproj -c Release -o release --nologo
 
-    - name: Change base-tag in index.html from / to WebDemos
+    - name: Change base-tag in index.html from / to charts
       run: sed -i 's/<base href="\/" \/>/<base href="\/charts\/" \/>/g' release/wwwroot/index.html
 
     - name: copy index.html to 404.html
